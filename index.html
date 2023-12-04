@@ -1,0 +1,80 @@
+<!--
+File: index.html
+GUI Assignment: multiplication table
+Mildred Kumah, UMass Lowell Computer Science, mildred_kumah@student.uml.edu
+Copyright (c) 2023 by Mildred All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MULTIPLICATION TABLE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <div class="first">
+        <h2 id="h2">ENTER 4 NUMBERS!!!</h2>
+        <div id="tabs">
+            <ul>
+                <li><a href="#paramTab">Parameters</a></li>
+            </ul>
+            <div id="paramTab">
+                <form id="multiplyForm" class="tab-content">
+                    <table class="fav-table">
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th>INPUT HERE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="label">Starting Vertical Number</td>
+                                <td>
+                                    <div class="slider" id="slider1"></div>
+                                    <input type="text" id="firstNum" name="firstNum">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Ending Vertical Number</td>
+                                <td>
+                                    <div class="slider" id="slider2"></div>
+                                    <input type="text" id="secondNum" name="secondNum">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Starting Horizontal Number</td>
+                                <td>
+                                    <div class="slider" id="slider3"></div>
+                                    <input type="text" id="thirdNum" name="thirdNum">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Ending Horizontal Number</td>
+                                <td>
+                                    <div class="slider" id="slider4"></div>
+                                    <input type="text" id="forthNum" name="forthNum">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" id="button">ENTER</button>
+                </form>
+            </div>
+        </div>
+        <div class="scroll">
+            <table id="output" align="center">
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/multiply.js"></script>
+</body>
+
+</html>
